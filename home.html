@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PharmaManage - Home</title>
+    <!-- Link to Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Link to External CSS -->
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <!-- Logo/Icon and Brand Name -->
+            <div class="nav-logo">
+                <img src="./images/logo.png">
+                <span class="nav-title">PharmaManage</span>
+            </div>
+                
+
+
+            <!-- Search Bar -->
+            <div class="nav-search">
+                <input type="text" id="searchInput" placeholder="Search products..." onkeyup="searchProducts()">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </div>
+
+            <!-- Navigation Links -->
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="supplier.html" class="nav-link">Supplier Page</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Admin Page</a>
+                </li>
+            </ul>
+
+            <!-- Mobile Menu Icon -->
+            <div class="nav-icon" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <section class="inventory-section">
+            <h2>Product Inventory</h2>
+            <table class="inventory-table" id="inventoryTable">
+                <thead>
+                    <tr>
+                        <th>Product Name</th>
+                        <th>Brand Name</th>
+                        <th>Stock Level</th>
+                        <th>Price per Unit ($)</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Example Product Rows -->
+                    <tr>
+                        <td>Paracetamol 500mg Tablets</td>
+                        <td>ABC Pharma</td>
+                        <td class="stock-level">1000</td>
+                        <td>0.10</td>
+                        <td>
+                            <button class="order-btn" onclick="orderProduct()">Order</button>
+                            <button class="decrease-btn" onclick="decreaseStock(this)">-</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Amoxicillin 250mg Capsules</td>
+                        <td>Global Meds</td>
+                        <td class="stock-level">500</td>
+                        <td>0.20</td>
+                        <td>
+                            <button class="order-btn" onclick="orderProduct()">Order</button>
+                            <button class="decrease-btn" onclick="decreaseStock(this)">-</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Ibuprofen 200mg Tablets</td>
+                        <td>HealthPlus</td>
+                        <td class="stock-level">800</td>
+                        <td>0.15</td>
+                        <td>
+                            <button class="order-btn" onclick="orderProduct()">Order</button>
+                            <button class="decrease-btn" onclick="decreaseStock(this)">-</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Vitamin C 1000mg Tablets</td>
+                        <td>WellnessCorp</td>
+                        <td class="stock-level">600</td>
+                        <td>0.05</td>
+                        <td>
+                            <button class="order-btn" onclick="orderProduct()">Order</button>
+                            <button class="decrease-btn" onclick="decreaseStock(this)">-</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Metformin 500mg Tablets</td>
+                        <td>CareMeds</td>
+                        <td class="stock-level">400</td>
+                        <td>0.12</td>
+                        <td>
+                            <button class="order-btn" onclick="orderProduct('Metformin 500mg Tablets')">Order</button>
+                            <button class="decrease-btn" onclick="decreaseStock(this)">-</button>
+                        </td>
+                    </tr>
+                    <!-- Add more product rows as needed -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <p>&copy; 2024 PharmaManage. All rights reserved.</p>
+            <p>Contact us: info@pharmamanage.com | +1 (234) 567-890</p>
+        </div>
+    </footer>
+
+    <!-- Link to External JavaScript -->
+    <script src="index.js"></script>
+</body>
+</html>

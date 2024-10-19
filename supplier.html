@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supplier Management</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="stylesupply.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <!-- Logo/Icon and Brand Name -->
+            <div class="nav-logo">
+                <img src="./images/logo.png">
+                <span class="nav-title">PharmaManage</span>
+            </div>
+                
+
+
+            <!-- Search Bar -->
+            <div class="nav-search">
+                <input type="text" id="searchInput" placeholder="Search supplier..." onkeyup="searchProducts()">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </div>
+
+            <!-- Navigation Links -->
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="supplier.html" class="nav-link">Supplier Page</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Admin Page</a>
+                </li>
+            </ul>
+
+            <!-- Mobile Menu Icon -->
+            <div class="nav-icon" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <h1>Supplier Management</h1>
+        <table class="supplier-table">
+            <thead>
+                <tr>
+                    <th>Supplier ID</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Address</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Example Supplier Row -->
+                <tr>
+                    <td>SUP001</td>
+                    <td>ABC Pharmaceuticals</td>
+                    <td>contact@abcpharma.com</td>
+                    <td>123 Main Street, Cityville</td>
+                    <td><button class="action-btn" onclick="goTODetail()">View Details</button></td>
+                </tr>
+                <tr>
+                    <td>SUP002</td>
+                    <td>Global Meds</td>
+                    <td>info@globalmeds.com</td>
+                    <td>456 Elm Street, Townsville</td>
+                    <td><button class="action-btn">View Details</button></td>
+                </tr>
+                <tr>
+                    <td>SUP003</td>
+                    <td>HealthPlus Supplies</td>
+                    <td>support@healthplus.com</td>
+                    <td>789 Oak Avenue, Villageville</td>
+                    <td><button class="action-btn">View Details</button></td>
+                </tr>
+                <!-- Add more supplier rows as needed -->
+            </tbody>
+        </table>
+    </div>
+    <footer class="footer">
+        <div class="footer-container">
+            <p>&copy; 2024 PharmaManage. All rights reserved.</p>
+            <p>Contact us: info@pharmamanage.com | +1 (234) 567-890</p>
+        </div>
+    </footer>
+    
+
+
+
+    <script src="index.js" charset="utf-8"></script>
+</body>
+</html>
