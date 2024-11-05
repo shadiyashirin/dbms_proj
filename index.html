@@ -3,44 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
-    <!-- Link to the external CSS file -->
+    <title>PharmaManage</title>
     <link rel="stylesheet" href="styles.css">
-    <!-- Google Fonts for better typography -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
 </head>
-<body>
+
+<body style="background-color: red;">
 
     <div class="container">
-        <form class="login-form" action="#" method="POST">
-            <h2>Login</h2>
-            
-            <!-- User Role Selection (Radio Buttons) -->
-            <div class="role-selection">
-                <label for="role">Login as:</label>
-                <div class="radio-group">
-                    <label>
-                        <input type="radio" id="admin-radio" name="role" value="admin" required> Admin
-                    </label>
-                    <label>
-                        <input type="radio" id="pharmacist-radio" name="role" value="pharmacist" required> Pharmacist
-                    </label>
-                </div>
+        <div class="welcome-section slide-in">
+            <div class="logo">
+                <img src="./images/logo.png" alt="PharmaManage Logo">
+                <h1>PharmaManage</h1>
             </div>
-            
-            <div class="input-group">
-                <label for="username">Username</label>
-                <input type="text" id="username" name="username" required placeholder="Enter your username">
-            </div>
-            <div class="input-group">
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password" required placeholder="Enter your password">
-            </div>
-            <button type="submit" class="btn" onclick="goToHome()">Login</button>
-            <p class="signup-link">Don't have an account? <a href="#">Sign up</a></p>
-        </form>
-    </div>
+            <h2>Welcome to PharmaManage</h2>
+            <p>Your comprehensive solution for managing pharmaceuticals and inventory effectively.</p>
+            <button class="login-btn" onclick="goToLogin()">Login</button>
+        </div>
 
-    <script src="./js/index.js"></script>
+        <!-- Footer Section -->
+        <footer class="footer">
+            &copy; 2024 PharmaManage. All rights reserved.
+        </footer>
+    </div>
+    
+    <script>
+        // Add sliding effect on page load
+    window.addEventListener('DOMContentLoaded', () => {
+    const welcomeSection = document.querySelector('.welcome-section');
+    welcomeSection.classList.add('slide-in');
+});
+
+    function goToLogin(){
+        window.location.href = "./login.html";
+    }
+    </script>
+
 </body>
 </html>

@@ -1,6 +1,3 @@
-function goToHome(){
-    window.location.href = "./home.html";  // Replace with the desired URL
-}
 
 function orderProduct(){
     window.location.href = "./supplier.html";
@@ -63,21 +60,6 @@ function toggleMenu() {
 //    alert(`Order placed for ${productName}!`);
 //}
 
-// Function to decrease stock level
-function decreaseStock(button) {
-    const stockCell = button.parentElement.parentElement.querySelector('.stock-level');
-    let currentStock = parseInt(stockCell.textContent);
-    if (currentStock > 0) {
-        stockCell.textContent = currentStock - 1;
-    } else {
-        alert('Stock cannot be negative.');
-    }
-}
-
-
-
-
-
 
 
 
@@ -109,6 +91,6 @@ function searchProducts() {
             } else {
                 tr[i].style.display = "none";
             }
-        }       
+        }
     }
 }

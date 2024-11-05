@@ -18,7 +18,7 @@
                 <li><a href="#add-product">Add New Product</a></li>
                 <li><a href="#update-stock">Update Stock Level</a></li>
                 <li><a href="#add-supplier">Add New Supplier</a></li>
-                <li><a href="admin_login.html">Logout</a></li>
+                <li><a href="index.html">Logout</a></li>
             </ul>
         </nav>
 

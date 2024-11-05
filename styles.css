@@ -1,122 +1,88 @@
-/* Reset some default browser styles */
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-/* Apply a background color and font to the body */
 body {
-    font-family: 'Roboto', sans-serif;
-    background: linear-gradient(135deg, #6cc8a1, #b2ad99);
-    height: 100vh;
+    font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
+    background:url('./images/b.jpg');
+    background-color: #e6f2f2;
+    background-size:100% 100%;
+    background-position: center center;
+    overflow: hidden;
 }
 
-/* Container to center the form */
 .container {
-    background-color: #fff;
-    padding: 40px 30px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 400px;
-}
-
-/* Style the form */
-.login-form h2 {
+    padding: 20px;
+    background:rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
     text-align: center;
-    margin-bottom: 24px;
-    color: #333;
 }
 
-/* Role Selection Section (Radio Buttons) */
-.role-selection {
-    margin-bottom: 20px;
-    color: #555;
+.logo img {
+    width: 50px;
+    border-radius: 50%;
 }
 
-.role-selection label {
-    display: block;
-    margin-bottom: 8px;
+h1 {
+    font-size: 24px;
+    color: #1e8b8e;
+    margin-top: 10px;
 }
 
-.radio-group {
-    display: flex;
-    justify-content: space-between;
+h2 {
+    color: #1e8b8e;
+    margin: 20px 0 10px;
 }
 
-.radio-group label {
-    display: inline-flex;
-    align-items: center;
-}
-
-.radio-group input {
-    margin-right: 10px;
-}
-
-.input-group {
+p {
+    color: #5a5a5a;
     margin-bottom: 20px;
 }
 
-.input-group label {
-    display: block;
-    margin-bottom: 8px;
-    color: #555;
-}
-
-.input-group input {
-    width: 100%;
-    padding: 12px 15px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    transition: border-color 0.3s;
-}
-
-.input-group input:focus {
-    border-color: #6cc8a1;
-    outline: none;
-}
-
-/* Button styles */
-.btn {
-    width: 100%;
-    padding: 12px;
-    background-color: #6cc8a1;
+.login-btn {
+    padding: 10px 20px;
+    background-color: #1e8b8e;
+    color: white;
     border: none;
-    border-radius: 4px;
-    color: #fff;
-    font-size: 16px;
+    border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s;
 }
 
-.btn:hover {
-    background-color: #b2ad99;
+.login-btn:hover {
+    background-color: #177576;
 }
 
-/* Sign-up link */
-.signup-link {
-    text-align: center;
-    margin-top: 15px;
-    color: #555;
+.footer {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #777;
+    padding-top: 15px;
+    border-top: 1px solid #ccc;
+    position: relative;
+
 }
 
-.signup-link a {
-    color: #b2ad99;
-    text-decoration: none;
+/* Sliding animation */
+.slide-in {
+    transform: translateY(-100%);
+    opacity: 0;
+    animation: slideIn 1.5s ease-in-out forwards;
 }
 
-.signup-link a:hover {
-    text-decoration: underline;
-}
-
-/* Responsive Design */
-@media (max-width: 500px) {
-    .container {
-        padding: 30px 20px;
+@keyframes slideIn {
+    to {
+        transform: translateY(0);
+        opacity: 1;
     }
-}
 
+    
+}

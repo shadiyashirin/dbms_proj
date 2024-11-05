@@ -1,0 +1,49 @@
+Supplier ID: 
+Order Details: null
+Supplier ID: 2
+Order Details: [{"productName":"Ibuprofen","quantity":6}]
+Inserting Order Detail - Order ID: 11, Product ID: 2, Quantity: 6, Price: 1.8
+Supplier ID: 2
+Order Details: [{"productName":"Ibuprofen","quantity":10}]
+Inserting Order Detail - Order ID: 12, Product ID: 2, Quantity: 10, Price: 3
+Supplier ID: 2
+Order Details: [{"productName":"Ibuprofen","quantity":5}]
+Inserting Order Detail - Order ID: 13, Product ID: 2, Quantity: 5, Price: 1.5
+Supplier ID: 8
+Order Details: [{"productName":"Aspirin","quantity":5}]
+Inserting Order Detail - Order ID: 14, Product ID: 1, Quantity: 5, Price: 2.5
+Supplier ID: 8
+Order Details: []
+Supplier ID: 8
+Order Details: [{"productName":"Aspirin","quantity":4}]
+Inserting Order Detail - Order ID: 15, Product ID: 1, Quantity: 4, Price: 2
+Supplier ID: 2
+Order Details: [{"productName":"Ibuprofen","quantity":8},{"productName":"Aspirin","quantity":7}]
+Inserting Order Detail - Order ID: 16, Product ID: 2, Quantity: 8, Price: 2.4
+Inserting Order Detail - Order ID: 16, Product ID: 1, Quantity: 7, Price: 3.5
+Supplier ID: 2
+Order Details: [{"productName":"Ibuprofen","quantity":7},{"productName":"Aspirin","quantity":9}]
+Inserting Order Detail - Order ID: 17, Product ID: 2, Quantity: 7, Price: 2.1
+Inserting Order Detail - Order ID: 17, Product ID: 1, Quantity: 9, Price: 4.5
+Supplier ID: 8
+Order Details: [{"productName":"Aspirin","quantity":7},{"productName":"Ciprofloxacin","quantity":15}]
+Inserting Order Detail - Order ID: 18, Product ID: 1, Quantity: 7, Price: 3.5
+Inserting Order Detail - Order ID: 18, Product ID: 8, Quantity: 15, Price: 18
+Supplier ID: 8
+Order Details: [{"productName":"Aspirin","quantity":6},{"productName":"Ciprofloxacin","quantity":12}]
+Inserting Order Detail - Order ID: 19, Product ID: 1, Quantity: 6, Price: 3
+Inserting Order Detail - Order ID: 19, Product ID: 8, Quantity: 12, Price: 14.4
+Supplier ID: 8
+Order Details: [{"productName":"Ciprofloxacin","quantity":35}]
+Inserting Order Detail - Order ID: 20, Product ID: 8, Quantity: 35, Price: 42
+Supplier ID: 8
+Order Details: [{"productName":"Ciprofloxacin","quantity":6}]
+Inserting Order Detail - Order ID: 21, Product ID: 8, Quantity: 6, Price: 7.2
+Supplier ID: 8
+Order Details: [{"productName":"Aspirin","quantity":7},{"productName":"Ciprofloxacin","quantity":11}]
+Inserting Order Detail - Order ID: 1, Product ID: 1, Quantity: 7, Price: 3.5
+Inserting Order Detail - Order ID: 1, Product ID: 8, Quantity: 11, Price: 13.2
+Supplier ID: 8
+Order Details: [{"productName":"Aspirin","quantity":6},{"productName":"Ciprofloxacin","quantity":14}]
+Inserting Order Detail - Order ID: 1, Product ID: 1, Quantity: 6, Price: 3
+Inserting Order Detail - Order ID: 1, Product ID: 8, Quantity: 14, Price: 16.8
